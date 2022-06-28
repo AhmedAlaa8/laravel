@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #o {
+
+            margin-left: 35%;
+            margin-top: 150px;
+            border: solid 3px rgb(238, 255, 0);
+            width: 400px;
+            height: 400px;
+            border-radius: 22px;
+            background-color: white;
+        }
+
+        input {
+            margin-top: 16%;
+            margin-left: 16px;
+            padding: 6px;
+            border-style: none;
+            border-bottom: rgb(238, 255, 0) solid 2px;
+        }
+
+        button {
+            margin-left: 182px;
+            margin-top: 35px;
+            padding: 4px;
+            border: rgba(238, 255, 0, 0.829) solid 2px;
+            color: rgb(238, 255, 0);
+            border-radius: 8px;
+
+        }
+
+        button:hover {
+            border: rgba(0, 110, 255, 0.829) solid 2px;
+            color: rgb(47, 0, 255);
+            background-color: rgba(0, 80, 254, 0.808);
+
+
+        }
+
+        #q {
+            margin: 18px auto;
+            text-align: center;
+            padding: 3px;
+            width: 200px;
+            text-align: center;
+            margin-top: 50px;
+            height: 30px;
+            border-bottom: solid 2px rgb(238, 255, 0);
+            color: rgba(0, 0, 0, 0.699);
+            font-size: 21px;
+            color: darkslategray;
+
+
+
+        }
+
+
+
+        h1 {
+            font-family: Lobster;
+            color: gold;
+            font-size: small;
+            /* margin-left: ; */
+            text-align: center;
+
+        }
+
+        .x {
+            color: gold;
+        }
+
+        .xx {
+            color: rgb(211, 207, 184);
+        }
+
+        a {
+            margin-top: 15px;
+            margin-left: 660px;
+            font-size: larger;
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(128, 126, 114);
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="o">
+        <h1><span class="x">Ahm</span><span class="xx">ed</span> ALaa </h1>
+        <input class="a" type="text" placeholder="years">
+        <input class="a1" type="text" placeholder="month">
+        <button>ok</button>
+        <p id="q"></p>
+    </div>
+
+    <a
+        href="file:///C:/Users/%D8%A7%D8%AD%D9%85%D8%AF%20%D8%B9%D9%84%D8%A7%D8%A1/Desktop/Ahmed%20ala@/,%D8%B9%D9%85%D8%B1,%D8%A8%D8%B1%D8%AC/%D8%A8%D8%B1%D8%AC%D9%83.html">لمعرفه
+        برجك اضغط هنا</a>
+
+    <script src="./jquery.min.js"></script>
+
+    <script>
+
+        var vcc = Math.floor(Math.random() * 256)
+        var vcc1 = Math.floor(Math.random() * 256)
+        var vcc2 = Math.floor(Math.random() * 256)
+
+        function name(s, m) {
+            var x = new Date();
+            var x1 = x.getMonth() + 1
+            var x2 = x.getFullYear()
+
+            var z = x2 - s
+            var z1 = x1 - m
+
+            if (z1 < 0) {
+                z = z - 1
+                z1 = z1 + 12
+            }
+            // $('p').html((`${z} yars:${z1}`))
+            document.getElementById('q').innerHTML = `${z} yars and month ${z1}`
+
+        }
+
+        $('button').click(function () {
+            var c = $('.a').val()
+            var c1 = $('.a1').val()
+            $('p').html(name(c, c1))
+        })
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-color: black; */
+        }
+
+        #o {
+
+            margin-left: 35%;
+            margin-top: 150px;
+            border: solid 3px rgb(238, 255, 0);
+            width: 400px;
+            height: 400px;
+            border-radius: 22px;
+            background-color: white;
+        }
+
+        input {
+            margin-top: 16%;
+            margin-left: 16px;
+            padding: 6px;
+            border-style: none;
+            border-bottom: rgb(238, 255, 0) solid 2px;
+        }
+
+        button {
+            margin-left: 182px;
+            margin-top: 35px;
+            padding: 4px;
+            border: rgba(238, 255, 0, 0.829) solid 2px;
+            color: rgb(238, 255, 0);
+            border-radius: 8px;
+
+        }
+
+        button:hover {
+            border: rgba(0, 110, 255, 0.829) solid 2px;
+            color: rgb(47, 0, 255);
+            background-color: rgba(0, 80, 254, 0.808);
+
+        }
+
+        p {
+            margin: 18px auto;
+            /* تعمل عندما يكون الابن اصغر من الاب فتجعله في المنتصف */
+            /* border: black solid 1px;
+            padding: 3px;
+            width: 200px; */
+            text-align: center;
+
+        }
+
+        .one {
+
+            padding: 3px;
+            width: 200px;
+            text-align: center;
+            margin: 18px auto;
+            height: 70px;
+            border-bottom: solid 2px rgb(238, 255, 0);
+
+        }
+
+        h1 {
+            font-family: Lobster;
+            color: gold;
+            font-size: small;
+            /* margin-left: ; */
+            text-align: center;
+
+        }
+
+        .x {
+            color: gold;
+        }
+
+        .xx {
+            color: rgb(236, 202, 4);
+        }
+
+        a {
+            margin-top: 15px;
+            margin-left: 660px;
+            font-size: larger;
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(128, 126, 114);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="o">
+        <h1><span class="x">Ahm</span><span class="xx">ed</span> ALaa </h1>
+        <input class="z" type="text" placeholder="الشهر ">
+        <input class="z1" type="text" placeholder="اليوم ">
+        <button class="z2">pop</button>
+        <div class="one"></div>
+    </div>
+    <a
+        href="file:///C:/Users/%D8%A7%D8%AD%D9%85%D8%AF%20%D8%B9%D9%84%D8%A7%D8%A1/Desktop/Ahmed%20ala@/,%D8%B9%D9%85%D8%B1,%D8%A8%D8%B1%D8%AC/%D8%B9%D9%85%D8%B1%D9%83.html">لمعرفه
+        سنك اضغط هنا</a>
+
+
+    <script src="../jquery.min.js"></script>
+
+    <script>
+
+        function mesaha(mon, day) {
+
+            var vcc = Math.floor(Math.random() * 256)
+            var vcc1 = Math.floor(Math.random() * 256)
+            var vcc2 = Math.floor(Math.random() * 256)
+
+            if ((mon == 12 && (day >= 22 && day <= 30))
+                || (mon == 1 && (day >= 1 && day <= 19))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج الجدي</p>`)
+            }
+
+            else if ((mon == 1 && (day >= 20 && day <= 30))
+                || (mon == 2 && (day >= 1 && day <= 18))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج الدلو</p>`)
+            }
+            else if ((mon == 2 && (day >= 19 && day <= 30))
+                || (mon == 3 && (day >= 1 && day <= 20))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج الحوت</p>`)
+            }
+
+            else if ((mon == 3 && (day >= 21 && day <= 30))
+                || (mon == 4 && (day >= 1 && day <= 19))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج الحمل</p>`)
+            }
+            else if ((mon == 4 && (day >= 20 && day <= 30))
+                || (mon == 5 && (day >= 1 && day <= 20))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج الثور </p>`)
+            }
+
+            else if ((mon == 5 && (day >= 21 && day <= 30))
+                || (mon == 6 && (day >= 1 && day <= 20))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج الجوزاء</p>`)
+            }
+            else if ((mon == 6 && (day >= 21 && day <= 30))
+                || (mon == 7 && (day >= 1 && day <= 22))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج السرطان</p>`)
+            }
+
+            else if ((mon == 7 && (day >= 23 && day <= 30))
+                || (mon == 8 && (day >= 1 && day <= 22))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج الاسد</p>`)
+            }
+            else if ((mon == 8 && (day >= 23 && day <= 30))
+                || (mon == 9 && (day >= 1 && day <= 22))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج العزراء</p>`)
+            }
+            else if ((mon == 9 && (day >= 23 && day <= 30))
+                || (mon == 10 && (day >= 1 && day <= 23))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2}) >برج الميزان</p>`)
+            }
+
+            else if ((mon == 10 && (day >= 24 && day <= 30))
+                || (mon == 11 && (day >= 1 && day <= 23))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج العقرب</p>`)
+            }
+            else if ((mon == 11 && (day >= 22 && day <= 30))
+                || (mon == 12 && (day >= 1 && day <= 21))
+            ) {
+                $('.one').html(`<p style=font-size:2em;color:rgb(${vcc},${vcc1},${vcc2})>برج القوس</p> <br><br>  `)
+            }
+        }
+
+        $('button').click(
+            function () {
+                var x = $('.z').val()
+                var x1 = $('.z1').val()
+
+                $('p').html(mesaha(x, x1))
+
+
+            }
+        )
+
+
+
+        for (var x = 20; x >= 0; x--) {
+            if (x == 10) {
+                break;
+            }
+
+            document.write(x + "<pr>");
+
+        }
+
+
+        // var xx = new Date();
+        // var xx1 = xx.getHours(),
+        //     xx2 = xx.getMonth(),
+        //     xx3 = xx.getSeconds();
+        // document.write(`<p style=font-size:30px>${xx1}:${xx2}:${xx3}</p>`)
+
+
+        // var x = new Date();
+        // xx8 = x.getSeconds() * 20;
+        // document.write(`<div style=height:${xx8}px></div>`)
+
+        // var c = Math.floor(Math.random() * 5)
+        // document.write(`<img src=${c}>`)
+
+    </script>
+</body>
+
+</html>
